@@ -76,7 +76,7 @@ function flushDeck () {
       mainDeckCardElement.style.width = '100%'
       mainDeckCardElement.style.height = '193px'
       mainDeckCardElement.style.opacity = '0'
-      mainDeckCardElement.style.backgroundImage = `url('/TheF2E2nd/W2_Freecell/cards_background/${card.type}${card.number}.png`
+      mainDeckCardElement.style.backgroundImage = `url('./cards_background/${card.type}${card.number}.png`
       mainDeckCardElement.style.backgroundPosition = 'center'
       mainDeckCardElement.style.backgroundSize = 'cover'
       mainDeckCardElement.style.backgroundRepeat = 'no-repeat'
