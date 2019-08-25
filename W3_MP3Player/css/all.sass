@@ -1,0 +1,287 @@
+body, html
+  margin: 0
+  padding: 0
+  position: relative
+  width: 100vw
+  height: 100vh
+  &::-webkit-scrollbar
+    display: none
+  -ms-overflow-style: none
+  font-family: 'Roboto', sans-serif
+  font-family: 'Noto Sans TC', sans-serif
+*
+  box-sizing: border-box
+  font-size: 16px
+.ad
+  position: absolute
+  z-index: 99
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  cursor: pointer
+  display: none
+.icon
+  cursor: pointer
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+  &::-webkit-scrollbar
+    display: none
+  -ms-overflow-style: none
+.btn
+  display: inline-block
+.hover-bf
+  cursor: pointer
+  position: relative
+  &:hover .hover-f
+    display: inline
+  .hover-f
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 99
+// nav
+.album-nav
+  background: linear-gradient(to bottom, #222222 23%, #0c0c0c)
+  width: 214px
+  height: 100%
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.29)
+  position: fixed
+  left: 0
+
+.album-add
+  display: flex
+  height: 73px
+  align-items: center
+  padding:
+    left: 25px
+    right: 24px
+  input
+    background: transparent
+    border: none
+    height: inherit
+    color: #979797
+    outline: none
+    width: calc(100% - 16px)
+ul.album-list
+  height: calc(100vh - 213px - 73px)
+  overflow: scroll
+  li.album-li
+    color: #868686
+    padding: 12px 26px
+    cursor: pointer
+    &.active
+      background-image: linear-gradient(to left, #ffa883 0%, #3927ff)
+      color: white
+    &:hover
+      background-image: linear-gradient(to left, #ffa883 0%, #3927ff)
+      filter: brightness(75%)
+.album-now
+  height: 213px
+  color: white
+  background-image: url('../img/album.jpg')
+  background-position: center center
+  background-size: cover
+  background-color: rgba(0, 0, 0, .65)
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  position: relative
+  padding: 
+    top: 16px
+    left: 25px
+    bottom: 21px
+  & > div >*
+    font-size: 18px
+  .album-now-title
+    color: #959595
+    margin-top: 4px
+  .music-now-title
+    font-size: 26px
+    font-weight: bold
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.15)
+// control
+.player-controls
+  background: rgb(42, 42, 42)
+  position: fixed
+  width: calc(100% - 214px)
+  height: 75px
+  right: 0
+  bottom: 0
+  display: flex
+  flex-wrap: wrap
+  & > *
+    // flex: 1
+  .progress
+    flex: 10
+    position: relative
+    display: flex
+    flex-basis: 100%
+    height: 5px
+    cursor: pointer
+    .progress-filled
+      flex: 0
+      background-image: linear-gradient(270deg, #FFA883 0%, #3927FF 100%)
+      flex-basis: 1%
+.controls-center
+  margin-left: auto
+  display: flex
+  align-items: center
+  & > *
+    margin-left: 34px
+.controls-right
+  margin-left: auto
+  display: flex
+  align-items: center
+  margin-right: 24px
+  .sound-progress
+    display: flex
+    width: 100px
+    height: 5px
+    background-color: rgba(30, 30, 30, .65)
+    border-radius: 4.5px
+    margin-left: 5px
+    cursor: pointer
+    .sound-filled
+      flex: 0
+      flex-basis: 50%
+      background-color: #888585
+      border-radius: 4.5px
+// dashboard
+.play-dashboard
+  width: calc(100% - 214px)
+  height: calc(100% - 75px)
+  background-color: #2A2A2A
+  position: fixed
+  right: 0
+  top: 0
+.dashboard-head
+  height: 50%
+  position: relative
+  color: white
+  padding-top: 18px
+  padding-right: 26px
+  padding-left: 29px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &:before
+    content: ''
+    background-image: url('../img/album.jpg')
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-size: cover
+    background-position: center center
+    filter: blur(3px)
+    z-index: -1
+  .user
+    justify-content: flex-end
+    display: flex
+    align-items: center
+    .user-img
+      width: 34px
+      height: 34px
+      border-radius: 50%
+      background-color: #9d68c1
+      display: inline-block
+      margin-right: 10px
+.album-info
+  position: relative
+  display: flex
+  .album-info-img
+    width: 185px
+    height: 185px
+    background-image: url('../img/album.jpg')
+    background-position: center
+    background-size: cover
+    position: relative
+    left: 50px
+    top: 30px
+  .album-info-title
+    margin-left: auto
+    margin-top: 15px
+    .info-title
+      font-size: 40px
+      font-weight: bold
+      margin-bottom: 30px
+  .album-info-add
+    background-color: rgba(0, 0, 0, .6)
+    margin-top: 25px
+    height: fit-content
+    padding: 8px 20px
+    border-radius: 23.5px
+    cursor: pointer
+    margin-left: auto
+    margin-right: 44px
+  .album-info-play
+    position: absolute
+    right: 44px
+    bottom: -50%
+    transform: translateY(-35%)
+
+.dashboard-main
+  height: 50%
+  overflow: hidden
+  padding:
+    top: 7.5%
+    left: 5.8%
+    right: 5.8%
+ul.songs-list
+  height: 100%
+  overflow: scroll
+  li.song
+    display: flex
+    color: white
+    padding: 2% 4%
+    cursor: pointer
+    position: relative
+    z-index: 1
+    & > *
+      font-size: 18px
+      font-weight: 700
+    &:nth-child(odd)
+      background-color: #222
+    &.active::before
+      position: absolute
+      content: ''
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      background-image: linear-gradient(270deg, #FFA883 0%, #3927FF 100%)
+      z-index: -2
+      // filter: brightness(25%) blur(2px)
+    &.active::after
+      position: absolute
+      content: ''
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      background: rgba(42,42,42,0.90)
+      z-index: -1
+    .song-title
+      margin-left: auto
+    .song-time
+      margin-left: auto
+  .song-controls
+    display: flex
+    margin-left: 8%
+    .sound-minus
+      transform: translateY(-6px)
+      margin-left: 15px
+      &:hover .hover-f
+        transform: translateY(13px)

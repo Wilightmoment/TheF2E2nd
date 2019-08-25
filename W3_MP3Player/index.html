@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MP3 Player</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900|Roboto:400,500,700,700i,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio src="./music/Galway Girl.mp3" title="GalWay Girl"></audio>
+  <audio src="./music/Catch My Breath.mp3" title="Catch My Breath"></audio>
+  <audio src="./music/Counting Stars.mp3" title="Counting Stars"></audio>
+  <audio src="./music/Demons.mp3" title="Demons"></audio>
+  <audio src="./music/Diamonds.mp3" title="Diamonds"></audio>
+  <audio src="./music/Sugar.mp3" title="Sugar"></audio>
+  <div class="ad">
+    <img src="./img/Group.png" alt="">
+  </div>
+  <div class="album-nav">
+    <div class="album-add">
+      <input type="text" placeholder="我的專輯">
+      <div class="icon"><img src="./img/plus-solid.png" alt=""></div>
+    </div>
+    <ul class="album-list">
+      <li class="album-li">Jessica</li>
+      <li class="album-li active">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+      <li class="album-li">Jessica</li>
+    </ul>
+    <div class="album-now">
+      <div>
+          <div class="album-now-t1">現在播放</div>
+          <div class="album-now-title">Youtube Music</div>
+      </div>
+      <div class="music-now-title">Write You</div>
+    </div>
+  </div>
+  <div class="player-controls">
+    <div class="progress">
+      <div class="progress-filled"></div>
+    </div>
+    <div class="controls-center">
+      <div class="btn random hover-bf">
+        <img src="./img/random .png" alt="">
+        <img src="./img/random_hover.png" class="hover-f" alt="">
+      </div>
+      <div class="btn prev hover-bf">
+        <img src="./img/step-backward-solid.png" alt="">
+        <img src="./img/step-backward-solid_hover.png" class="hover-f" alt="">
+      </div>
+      <div class="btn play hover-bf">
+        <img src="./img/play-circle-regular.png" alt="">
+        <img src="./img/play-circle-regular_hover.png" class="hover-f" alt="">
+      </div>
+      <div class="btn next hover-bf">
+        <img src="./img/step-forward-solid.png" alt="">
+        <img src="./img/step-forward-solid_hover.png" class="hover-f" alt="">
+      </div>
+      <div class="btn repeat hover-bf">
+        <img src="./img/repeat_all.png" alt="">
+        <img src="./img/repeat_all_hover.png" class="hover-f" alt="">
+      </div>
+    </div>
+    <div class="controls-right">
+      <div class="btn"><img src="./img/audio.png" alt=""></div>
+      <div class="sound-progress">
+        <div class="sound-filled"></div>
+      </div>
+    </div>
+  </div>
+  <div class="play-dashboard">
+    <div class="dashboard-head">
+      <div class="user">
+        <span class="user-img"></span>
+        <span>Wilightmoment</span>
+      </div>
+      <div class="album-info">
+        <div class="album-info-img"></div>
+        <div class="album-info-title">
+            <div class="info-title">
+                Youtube Music
+            </div>
+            <div class="info-type">Youtube 頻道</div>
+            <div class="info-date">於 2019.8.22</div>
+        </div>
+        <div class="album-info-add">
+          + 新增至我的專輯
+        </div>
+        <div class="album-info-play hover-bf">
+          <img src="./img/play_playlist.png" alt="">
+          <img src="./img/play_playlist hover.png" class="hover-f" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-main">
+      <ul class="songs-list">
+        
+      </ul>
+    </div>
+  </div>
+  <script src="./js/all.js"></script>
+</body>
+</html>
